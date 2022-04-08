@@ -5,6 +5,8 @@ import { useParams } from 'react-router-dom';
 
 import axios from 'axios';
 
+import './Coin.css';
+
 const Coin = () => {
 
     const params = useParams();
@@ -38,7 +40,7 @@ const Coin = () => {
                             
                         </div>
                         <div className='coin-price'>
-                            {coin.market_data?.current_price ? <h1>${coin.market_data.current_price.usd.toLocaleString()}</h1> : null}
+                            {coin.market_data?.current_price ? <h1>${coin.market_data.current_price.usd}</h1> : null}
                         </div>
                     </div>
                 </div>
@@ -97,6 +99,7 @@ const Coin = () => {
                 <div className='content'>
                     <div className='about'>
                         <h3>About</h3>
+                        <p>{coin.description ? coin.description.en : ''}</p>
                         {/* <p dangerouslySetInnerHTML={{
                             __html: DOMPurify.sanitize(coin.description ? coin.description.en : ''),
                         }}>

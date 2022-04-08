@@ -2,8 +2,10 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 
-import CoinItem from './CoinItem';
-import Coin from '../routers/Coin';
+import CoinItem from '../CoinItem/CoinItem';
+import Coin from '../../routers/Coin';
+
+import './Coins.css';
 
 const Coins = ({coins}) => {
     return (

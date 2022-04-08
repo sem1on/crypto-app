@@ -5,6 +5,7 @@
     --text-primary: #26272b;
 }
 
+
 [data-theme='dark'] {
     --background: #26272b;
     --text-primary: #f4f4f4;
@@ -17,111 +18,27 @@
 }
 
 body {
-  margin: 0;
-  font-family: 'Nunito', 'Segoe UI', 'Roboto', 'Oxygen',
+    margin: 0;
+    font-family: 'Nunito', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #26272b;
+    color: #f4f4f4;
 }
 
 a {
-    color: var(--text-primary);
+    color: #f4f4f4;
     text-decoration: none;
-}
-
-h1 {
-    color: var(--text-primary);
+  }
+  
+  h1 {
+    text-align: center;
     margin: 1rem;
-    letter-spacing: 3px;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-/* <------Navbar------> */
-
-.navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.icon {
-    font-size: 2rem;
-    color: #6900ff;
-}
-
-.purple {
-    color: #6900ff;
-}
-
-/* <------Coins------> */
-
-.container {
-    max-width: 1140px;
-    margin: auto;
-}
-
-.heading {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--background);
-    box-shadow: 0px 0px 12px #18191b;
-    border-radius: 10px;
-    margin: 2rem 1rem;
-    padding: .7rem 1rem;
-    font-weight: 700;
-    color: var(--text-primary);
-}
-
-.coin-name {
-    margin-left: -4rem;
-}
-
-@media screen and (max-width: 720px){
-    .hide-mobile {
-        display: none;
-    }
-}
-
-/* <------Coin Row------> */
-
-.coin-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--background);
-    box-shadow: 0px 0px 12px #18191b;
-    border-radius: 10px;
-    margin: 2rem 1rem;
-    padding: .7rem 1rem;
-    font-weight: 700;
-    color: var(--text-primary);
-    cursor: pointer;
-    transition: .7s ease-in-out;
-}
-
-.coin-row:hover {
-    transform: scale(1.03);;
-}
-
-.img-symbol {
-    display: flex;
-    justify-content: space-around;
-}
-
-.img-symbol img {
-    width: 25px;
-    margin-right: 10px;
-    margin-left: -35px;
-}
-
-@media screen and (max-width: 720px){
-    .hide-mobile {
-        display: none;
-    }
-}
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
